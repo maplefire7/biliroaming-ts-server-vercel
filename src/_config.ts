@@ -197,7 +197,7 @@ export const db_local_enabled: io = 1;
 export const local_cache_secret = process.env.local_cache_secret || "";
 //PostgreSQL配置(需Read/Write权限)
 import { Pool } from "@neondatabase/serverless"; //导入(不用改)
-export const db_bitio_enabled: io = 0; //启用postgresql数据库
+export const db_bitio_enabled: io = 1; //启用postgresql数据库
 const connectionString = //三种配置方法
   process.env.POSTGRES_URL || //在Vercel项目Storage里连接数据库，并将上方 db_bitio_enabled 设为1
   process.env.db_bitio_pool || //配置环境变量 db_bitio_pool 为下方格式
@@ -244,7 +244,7 @@ export const pass_web_on_check: io = 1;
 export const ver_min: number = 1208;
 //锁区，填写的是支持的地区 cn-中国大陆 hk-中国香港 tw-中国台湾 th-泰国/新加坡/东南亚地区
 //TODO 暂时未加地区检测，访问不支持地区由B站服务器提示错误。
-export const block_region: _block_region = ["hk"];
+export const block_region: _block_region = ["hk","tw","th"];
 //============================================================
 
 //=====================获取非官方泰区字幕========================
