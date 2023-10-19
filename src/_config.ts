@@ -244,7 +244,7 @@ export const pass_web_on_check: io = 1;
 export const ver_min: number = 1208;
 //锁区，填写的是支持的地区 cn-中国大陆 hk-中国香港 tw-中国台湾 th-泰国/新加坡/东南亚地区
 //TODO 暂时未加地区检测，访问不支持地区由B站服务器提示错误。
-export const block_region: _block_region = ["hk","tw","th"];
+export const block_region: _block_region = ["hk"];
 //============================================================
 
 //=====================获取非官方泰区字幕========================
